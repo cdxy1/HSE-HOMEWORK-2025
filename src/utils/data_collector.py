@@ -13,7 +13,7 @@ from src.utils.youtube_api import (
 )
 
 
-def collect_youtube_data(api_key, max_videos=120):
+def collect_youtube_data(api_key, max_videos):
     youtube = setup_youtube_api(api_key)
     video_ids = search_astrology_videos(youtube, max_videos)
 

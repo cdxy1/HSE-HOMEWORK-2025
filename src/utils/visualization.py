@@ -35,7 +35,7 @@ def create_visualizations(df):
     corr_data = df[
         ["view_count", "like_count", "comment_count", "duration_minutes"]
     ].corr()
-    im = axes[1, 0].imshow(corr_data, cmap="coolwarm", aspect="auto", vmin=-1, vmax=1)
+    axes[1, 0].imshow(corr_data, cmap="coolwarm", aspect="auto", vmin=-1, vmax=1)
     axes[1, 0].set_xticks(range(len(corr_data.columns)))
     axes[1, 0].set_yticks(range(len(corr_data.columns)))
     axes[1, 0].set_xticklabels(corr_data.columns, rotation=45)

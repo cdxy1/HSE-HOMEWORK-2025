@@ -7,7 +7,7 @@ def setup_youtube_api(api_key):
     return build("youtube", "v3", developerKey=api_key)
 
 
-def search_astrology_videos(youtube, max_results=150):
+def search_astrology_videos(youtube, max_results):
     all_video_ids = []
 
     for term in SEARCH_TERMS:
