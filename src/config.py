@@ -7,7 +7,7 @@ warnings.filterwarnings("ignore")
 plt.rcParams["font.family"] = "DejaVu Sans"
 plt.rcParams["axes.unicode_minus"] = False
 
-API_KEY = "AIzaSyAfS1NURr-J-hHScqhjYpW8yGFmpxfjjP4"
+API_KEY = "КЛЧЮИК УЖЕ НЕ АКТИВЕН))"
 
 SEARCH_TERMS = [
     "астрология гороскоп",
