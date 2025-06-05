@@ -1,14 +1,16 @@
 import pandas as pd
 
+from src.config import COMMENTS_ANALYSIS_LIMIT, MAX_COMMENTS_PER_VIDEO
+from src.utils.data_processing import (
+    analyze_comment_sentiment,
+    create_derived_variables,
+)
 from src.utils.youtube_api import (
     get_video_comments,
     get_video_details,
     search_astrology_videos,
     setup_youtube_api,
 )
-
-from src.utils.data_processing import analyze_comment_sentiment, create_derived_variables
-from src.config import COMMENTS_ANALYSIS_LIMIT, MAX_COMMENTS_PER_VIDEO
 
 
 def collect_youtube_data(api_key, max_videos=120):
